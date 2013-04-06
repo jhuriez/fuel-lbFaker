@@ -216,6 +216,14 @@ class Model_Profile extends \Orm\Model
 }
 ```
 
+<h2>FuelORM Model Relations</h2>
+
+For the moment, only `Has_One` relation work. For example if you have `Profile` and `Person` entities, the `Person` `Has_One` `Profil`.
+
+When fake data will be generated, `Person` entity will contains a fake generated `Profil` entity in his relation (Has_One)
+
+Note: `Profil` entity need to be before the `Person` entity in the configuration array 
+
 <h2>Fake PHP Library</h2>
 
 More info with the Fake PHP Library : https://github.com/fzaninotto/Faker
